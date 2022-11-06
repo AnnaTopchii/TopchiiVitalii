@@ -1,6 +1,6 @@
 .header {
-    background-color: $secondary-bcg-color;
-    border-bottom: 2px solid $accent-color;
+    background-color: $accent-color;
+    border-bottom: 1px solid $white;
     position: fixed;
     top:0;
     width: 100vw;
@@ -41,7 +41,7 @@
         top: 0;
         right: 0;
         background-color: $white;
-        padding: 40px 30px;
+        padding: 20px 30px;
     }}
 }
 
@@ -49,19 +49,17 @@
     display: flex;
     align-items: center;
     font-weight: 500;
-    gap: 20px;
     justify-content: start;   
 }
-
 
 .nav__name {
     display: inline-block;
     font-size: 16px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 12px;
+    border-right: 1px solid rgba($secondary-bcg-color, $alpha: 1.0);
 }
 
-.menu-container {
+/*.menu-container {
     @media screen and (min-width:768px){
     display: flex;
     align-items: center;
@@ -69,7 +67,7 @@
 }
     @media screen and (min-width:1200px){
     margin-left: 93px;}
-}  
+}  */
 
 .btn-menu {
     position: absolute;
@@ -111,9 +109,7 @@
    text-decoration: none;
    font-size: 16px;
    color: $primary-text-color;
-   padding-left: 20px;
-   padding-top: 10px;
-   padding-bottom: 10px;
+   padding: 10px 10px 10px 40px;
 
     transition: color 250ms $animation-timing-function;
 
@@ -128,8 +124,7 @@
     font-weight: 700;
     color: $primary-text-color;
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 12px;
 
     transition: color 250ms $animation-timing-function;
 
@@ -137,7 +132,6 @@
         color: $accent-color;
     }
 }
-
 
 .site-nav__link--current {
     color: $accent-color-bright;

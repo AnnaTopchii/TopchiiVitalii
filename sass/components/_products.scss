@@ -1,5 +1,5 @@
 .products__section {
-    background-color: #F5F4FA;
+    background-color: $secondary-bcg-color;
 }
 
 .products__title {
@@ -18,17 +18,16 @@
     border-radius: 4px;
     padding: 15px;
     display: flex;
-    max-width: 1100px;
     gap: 20px;
 
-    /*@media screen and (min-width:480px){
-        width: 450px;}
+    @media screen and (min-width:480px){
+        width: (480px-30px);}
 
     @media screen and (min-width:768px){
-        width: 354px;}
+        width: (768px-30px);}
 
     @media screen and (min-width:1200px){
-        width: 270px;}*/
+        width: (1200px-30px);}
 }
 
 .products__card:nth-child(2n){
@@ -40,7 +39,7 @@
 }
 
 .products__thumb {
-    width: 80%;
+    
     padding-top: 30px;
     padding-bottom: 24px;
     justify-content: center;
